@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Online.JS</title>
+    <link id='favicon' rel="shortcut icon" href="./img/favicon1.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+        }
+        
+        #main {
+            width: 1000px;
+            height: 900px;
+            background-color: rgb(0, 0, 0);
+            box-shadow: 0.4rem 1rem 1rem -0.4rem rgba(255, 255, 255, 0.849);
+            border-radius: 9px;
+            margin-top: 20px;
+            margin-left: 170px;
+            margin-bottom: 20px;
+            border: 5px double rgb(255, 255, 255);
+        }
+
+        nav {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-image: url("https://wallpaperaccess.com/full/1858126.jpg");
+            color: #000000;
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            text-decoration: underline;
+        }
+
+        #lag{
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+        }
+
+        i {
+            margin-right: 20px;
+            color: #fff;
+        }
+
+        p {
+            font-size: 25px;
+            color: rgb(255, 0, 0);
+            border-left: 5px solid rgb(0, 255, 0);
+            border-right: 5px solid rgb(0, 255, 0);
+            text-align: center;
+        }
+
+        q {
+            color: rgb(255, 255, 255);
+        }
+
+        .inp {
+            width: 750px;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: larger;
+            border: none;
+            border: 4px solid rgb(0, 255, 0);
+            margin-bottom: 17px;
+        }
+
+        #cName {
+            width: 730px;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: larger;
+            border: none;
+            border: 4px solid rgb(0, 255, 0);
+            margin-bottom: 17px;
+        }
+        
+        input::placeholder {
+            color: gray;
+            font-size: larger;
+            font-style: italic;
+        }
+
+        span {
+            font-size: 26px;
+            margin-left: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        #nam{
+            margin-left: 85px;
+        }
+        #num{
+            margin-left: 58px;
+        }
+        #email{
+            margin-left: 92px;
+        }
+        #password{
+            margin-left: 45px;
+        }
+        button {
+            width: 50%;
+            height: 50px;
+            margin-top: 35px;
+            background-color: rgb(0, 255, 0);
+            font-size: x-large;
+            border: none;
+            border-radius: 9px;
+            color: #fff;
+            font-weight: bold;
+            margin-left: 25%;
+        }
+
+        button:hover {
+            background-color: orangered;
+            color: gold;
+            cursor: pointer;
+        }
+
+        input:hover {
+            border: 4px solid orangered;
+        }
+        a{
+            font-size: x-large;
+            color: #fff;
+        }
+        a:hover {
+            color: orangered;
+        }
+        #a{
+            margin-left: 40%;
+        }
+    </style>
+</head>
+
+<body>
+        <div id="main">
+            <nav id="img"><i class="fa-solid fa-lock"><br /></i><span id="lag">Sign Up</span></nav>
+            <p>Create an account with your exist <q>Google Account</q></p>
+            <table>
+                <tr>
+                    <td>
+                        <span>Name: </span><input type="text" class="inp" id="nam" placeholder="Enter Name..."
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Father Name: </span><input type="text" class="inp" id="fName" placeholder="Enter Father Name..."
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Phone #: </span><input type="number" class="inp" id="num" placeholder="Enter Phone Number..."
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Country Name: </span><input type="text" class="inp" id="cName" placeholder="Enter Country Name..."
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Email: </span><input type="text" class="inp" id="email" placeholder="Enter Email..."
+                            required="required">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Password: </span><input type="password" class="inp" id="password"
+                            placeholder="Enter Password..." required="required">
+                    </td>
+                </tr>
+            </table>
+            <p>You Have An Account? <a href="./LogIn.html"> Log In</a></p>
+            <a href="./AnotherWay.html" id="a">Try Another Way</a>
+            <br />
+            <button id="btn">Sign Up</button>
+        </div>
+    <script type="module" src="./JS/SignUp.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

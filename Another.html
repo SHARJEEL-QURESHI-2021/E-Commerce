@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Way | Online.JS</title>
+    <link id='favicon' rel="shortcut icon" href="./img/favicon1.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        body {
+            background-size: cover;
+            background-image: url("https://wallpaperaccess.com/full/1858126.jpg");
+        }
+
+        #main {
+            width: 400px;
+            height: 500px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0.4rem 1rem 1rem -0.4rem rgba(112, 112, 112, 0.849);
+            border-radius: 9px;
+            margin-top: 25px;
+            background-image: linear-gradient(to right, purple, rgb(255, 0, 0));
+            padding-top: 20px;
+            color: white;
+            margin-top: 80px;
+        }
+
+        p {
+            letter-spacing: 2px;
+            display: inline;
+            font-size: xx-large;
+            margin-right: 35px;
+        }
+
+        #cross {
+            font-size: xx-large;
+            margin-right: 20px;
+            color: black;
+            font-weight: bolder;
+        }
+
+        #aln {
+            text-align: end;
+        }
+
+        #bdr-1 {
+            width: 80%;
+            height: 35px;
+            border: 3px solid rgb(255, 255, 255);
+            font-size: x-large;
+            border-radius: 15px;
+            letter-spacing: 5px;
+            padding-top: 5px;
+            margin-top: 80px;
+            color: rgb(255, 255, 255);
+            background-color: orangered;
+        }
+
+        h6 {
+            font-size: 18px;
+            color: yellow;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+        #bdr-2 {
+            width: 80%;
+            height: 35px;
+            border: 3px solid rgb(255, 255, 255);
+            font-size: x-large;
+            border-radius: 15px;
+            letter-spacing: 5px;
+            padding-top: 5px;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            background-color: blue;
+        }
+
+        #bdr-3 {
+            width: 80%;
+            height: 35px;
+            border: 3px solid rgb(255, 255, 255);
+            font-size: x-large;
+            border-radius: 15px;
+            letter-spacing: 5px;
+            padding-top: 5px;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+
+        #google {
+            margin-right: 10px;
+        }
+
+        #face {
+            margin-right: 10px;
+        }
+
+        #gits {
+            margin-right: 10px;
+        }
+
+        #cross:hover {
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+        }
+
+        #bdr-1:hover {
+            cursor: pointer;
+            background-color: chartreuse;
+            color: rgb(0, 0, 0);
+        }
+
+        #bdr-2:hover {
+            cursor: pointer;
+            background-color: chartreuse;
+            color: rgb(0, 0, 0);
+        }
+
+        #bdr-3:hover {
+            cursor: pointer;
+            background-color: chartreuse;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div id="main">
+            <div id="aln">
+                <p>Try Another Way</p><i class="fa-solid fa-xmark" id="cross"></i>
+            </div>
+            <br />
+            <br />
+            <div id="bdr-1"><i class="fa-brands fa-google" id="google"></i>Google</div>
+            <div id="bdr-2"><i class="fa-brands fa-facebook" id="face"></i>Facebook</div>
+            <div id="bdr-3"><i class="fa-brands fa-github" id="gits"></i>Github</div>
+            <!-- <h6>Filled Name FatherName And Phone Input Only In Sign In Page</h6> -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+        </div>
+    </center>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, signInWithRedirect, getRedirectResult, FacebookAuthProvider, GithubAuthProvider } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyB3ZvtJgykA5zlFpKuhnsSq_Ay6HKZlNec",
+            authDomain: "task-e2185.firebaseapp.com",
+            projectId: "task-e2185",
+            storageBucket: "task-e2185.appspot.com",
+            messagingSenderId: "447773639548",
+            appId: "1:447773639548:web:c917761b6d901682781af9",
+            measurementId: "G-0D3K0WGC3G"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const provide = new GoogleAuthProvider(app);
+        const provider = new FacebookAuthProvider(app);
+        const providers = new GithubAuthProvider(app);
+
+        const google = document.getElementById("bdr-1")
+        google.addEventListener('click', (e) => {
+            signInWithRedirect(auth, provide);
+            getRedirectResult(auth)
+                .then((result) => {
+                    // This gives you a Google Access Token. You can use it to access Google APIs.
+                    const credential = GoogleAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    console.log("Google Token:", token);
+
+                    // The signed-in user info.
+                    const user = result.user;
+                    console.log("Google User:", user);
+                    // IdP data available using getAdditionalUserInfo(result)
+                    // ...
+                }).catch((error) => {
+                    // Handle Errors here.
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log("Google ErrorCode:", errorCode);
+                    console.log("Google ErrorMessage:", errorMessage);
+
+                    // The email of the user's account used.
+                    const email = error.email;
+                    console.log("Google Email:", email);
+
+                    // The AuthCredential type that was used.
+                    const credential = GoogleAuthProvider.credentialFromError(error);
+                    console.log("Google Credential:", credential)
+                })
+        });
+
+        const faces = document.getElementById("bdr-2");
+        faces.addEventListener('click', () => {
+            signInWithRedirect(auth, provide);
+            getRedirectResult(auth)
+                .then((result) => {
+                    // This gives you a Facebook Access Token. You can use it to access Facebook APIs.
+                    const credential = FacebookAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    console.log("Facebook Token:", token);
+
+                    // The signed-in user info.
+                    const user = result.user;
+                    console.log("Facebook User:", user);
+
+                    // IdP data available using getAdditionalUserInfo(result)
+                    // ...
+                }).catch((error) => {
+                    // Handle Errors here.
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log("Facebook ErrorCode:", errorCode);
+                    console.log("Facebook ErrorMessage:", errorMessage);
+
+                    // The email of the user's account used.
+                    const email = error.email;
+                    console.log("Facebook Email:", email);
+
+                    // The AuthCredential type that was used.
+                    const credential = FacebookAuthProvider.credentialFromError(error);
+                    console.log("Facebook Credential:", credential)
+                });
+        })
+
+        const git = document.getElementById("bdr-3")
+        git.addEventListener('click', (e) => {
+            signInWithRedirect(auth, providers);
+            getRedirectResult(auth)
+                .then((result) => {
+                    // This gives you a Github Access Token. You can use it to access Github APIs.
+                    const credential = GithubAuthProvider.credentialFromResult(result);
+                    const token = credential.accessToken;
+                    console.log("Github Token:", token);
+
+                    // The signed-in user info.
+                    const user = result.user;
+                    console.log("Github User:", user);
+
+                    // IdP data available using getAdditionalUserInfo(result)
+                    // ...
+                }).catch((error) => {
+                    // Handle Errors here.
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log("Github ErrorCode:", errorCode);
+                    console.log("Github ErrorMessage:", errorMessage);
+
+                    // The email of the user's account used.
+                    const email = error.email;
+                    console.log("Github Email:", email);
+
+                    // The AuthCredential type that was used.
+                    const credential = GithubAuthProvider.credentialFromError(error);
+                    console.log("Github Credential:", credential)
+                });
+        });
+
+        const cross = document.getElementById("cross")
+        cross.addEventListener('click', () => {
+            window.location.href = "./AnotherWay.html";
+        })
+    </script>
+</body>
+
+</html>

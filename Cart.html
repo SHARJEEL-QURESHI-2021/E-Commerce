@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Online.JS</title>
+    <link id='favicon' rel="shortcut icon" href="./img/favicon1.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Footer Code */
+
+        #tikka {
+            background-image: url(./img/footer-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        #white {
+            color: #ffffff;
+            font-size: 15px;
+            margin-top: 7px;
+        }
+
+        .gun {
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        #gun {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #glue {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #glue:hover {
+            text-decoration: underline;
+        }
+
+        #gun:hover {
+            text-decoration: underline;
+        }
+
+        .uup {
+            margin-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        #para4 {
+            color: rgb(0, 255, 0);
+            font-size: 15px;
+        }
+
+        hr {
+            color: #ffffff;
+        }
+
+        .pop {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding-right: 10px;
+            margin-top: 20px;
+        }
+
+
+        #yai {
+            margin-left: -22px;
+            margin-top: 5px;
+        }
+
+        hr {
+            margin-left: -100px;
+        }
+
+        #buttons {
+            background-color: rgb(7, 190, 7);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-left: 55px;
+            position: fixed;
+            bottom: 7px;
+        }
+
+        .jeep {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .jeep:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        .jeeps {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .jeeps:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        #bold {
+            color: #ffffff;
+            font-weight: bolder;
+        }
+
+        .qqqq {
+            color: #ffffff;
+            font-size: xx-large;
+            border: 1px solid #ffffff;
+            padding: 7px 10px;
+            border-radius: 50%;
+        }
+
+        .qqqq:hover {
+            border-color: #fe8315;
+            color: #fe8315;
+
+        }
+
+        #board {
+            width: 300px;
+            margin-top: 35px;
+        }
+
+        body {
+            margin: 0px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+        }
+
+        #nav {
+            height: 60px;
+            background-color: black;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #logo {
+            color: #fff;
+            font-size: xx-large;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        #logo:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border: 3px solid rgb(0, 255, 0);
+        }
+
+        
+
+        #see {
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+
+        h1 {
+            color: #fff;
+        }
+
+        input {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 255, 0);
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            font-size: larger;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        #sees {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 350px;
+            justify-content: space-between;
+        }
+
+        #wth {
+            width: 1000px;
+        }
+
+        p {
+            font-weight: bold;
+
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0);
+            margin: 30px auto;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+            border-top: 5px solid rgb(0, 255, 0);
+            margin-bottom: 300px;
+        }
+
+        .main .a h1 {
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(0, 255, 0);
+            margin-bottom: 30px;
+        }
+
+        #see {
+            list-style: none;
+        }
+
+        #see li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        li div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 350px;
+        }
+
+        li .aa {
+            width: 150px;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 40px;
+        }
+
+        li p {
+            text-align: left;
+        }
+
+        li p.q {
+            padding: 10px;
+            background-color: rgb(0, 255, 0);
+            border-radius: 5px;
+            color: white;
+            font-weight: bolder;
+            font-size: 19px;
+            text-align: center;
+            width: 50px;
+        }
+        p{
+            color: #fff;
+        }
+
+        li img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid rgb(0, 255, 0);
+        }
+
+        #see li i {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        #checkOut {
+            cursor: pointer;
+            background-color: rgb(0, 255, 0);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 15px;
+           padding-left: 45%;
+           font-weight: bold;
+           display: none;
+           font-size: x-large;
+        }
+
+        #see li:hover::before {
+            animation: fade 1s linear;
+        }
+        #nothing{
+            color: #929090;
+            text-align: center;
+        }
+        #checkOut:hover {
+            background-color: orangered;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <center>
+            <i class="fa-solid fa-cart-shopping" id="logo" onclick="location.replace(`./Web.html`)"> Online.JS</i>
+        </center>
+    </nav>
+    <div class="main">
+        <div class="a">
+            <h1>Cart Products</h1>
+        </div>
+        <h1 id="nothing">No Items Here!</h1>
+        <ul id="see">
+
+        </ul>
+        <button class="fa-solid fa-cart-shopping" id="checkOut">
+             Checkout
+        </button>
+    </div>
+
+    <div id="tikka">
+        <div>
+            <div id="board">
+                <i class="fa-solid fa-cart-shopping" id="logo" onclick="location.replace(`./index.html`)">
+                    Online.JS</i>
+                <p id="para4">
+                    Online.JS is the small website, But in 3 to 4 year it is convert into in brand website.
+                    <br /><span id="span">Thanks! For Coming.</span>
+                </p>
+            </div>
+            <div id="yai" class="mt-5">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <span class="pop">Follow Us</span>
+                        <a href="https://facebook.com" target="_blank" class="qqqq"><i
+                                class="fa-brands fa-facebook "></i></a>
+                        <a href="https://github.com/SHARJEEL-QURESHI-2021" target="_blank" class="qqqq"><i
+                                class="fa-brands fa-github "></i></a>
+                        <a href="#" class="qqqq"><i class="fa-brands fa-linkedin "></i></a>
+                        <a href="#" class="qqqq"><i class="fa-brands fa-youtube "></i></a>
+                        <a href="#" class="qqqq"><i class="fa-brands fa-twitter "></i></a>
+                        <a href="#" class="qqqq"><i class="fa-brands fa-instagram "></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex down">
+            <div>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <h3 id="bold">Company</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">About Us</a>
+                    </li>
+                    <a href="#" class="jeeps"> Career</a>
+                    <li>
+                        <a href="#" class="jeep">Press</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">Videos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <h3 id="bold">Customers</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">iPhone App</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">Android App</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <h3 id="bold">Support</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">contact us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">0316-288-4402</a>
+                    </li>
+                    <li>
+                        <a href="#" class="jeep">sharjeelqureshi2021@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <hr>
+            <div class="text-center uup">
+                <span id="white">
+                    Copyright © 2023 - 2026 Online.JS. Online.JS logo and related marks are registered Trademarks of
+                    Online.JS.
+                </span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span>
+                    <a href="#" id="glue">Privacy Policy</a>
+                    <span class="gun"> | </span>
+                    <a href="#" id="gun">Terms of Use</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./JS/Cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

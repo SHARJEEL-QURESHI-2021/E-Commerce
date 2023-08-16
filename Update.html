@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update | Online.JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+        }
+
+        #nav {
+            height: 60px;
+            background-color: black;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #logo {
+            color: #fff;
+            font-size: xx-large;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+
+        #logo:hover {
+            cursor: pointer;
+        }
+
+        #logos {
+            color: #fff;
+            font-size: xx-large;
+            margin-bottom: 10px;
+            margin-right: 52px;
+        }
+
+        #logos:hover {
+            cursor: pointer;
+        }
+
+        #user {
+            width: 65px;
+            height: 65px;
+            border: 5px solid rgb(0, 255, 0);
+            margin-left: 10px;
+            margin-top: 60px;
+        }
+
+        #user:hover {
+            cursor: pointer;
+            border: 5px solid orangered;
+        }
+
+        #navs {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(0, 255, 0);
+            padding-top: 10px;
+            padding-left: 20px;
+            text-align: end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #main {
+            width: 400px;
+            height: 520px;
+            background-color: rgb(0, 0, 0);
+            margin-top: 10px;
+            box-shadow: 1em 1em 1em -0.7em black;
+            border-radius: 10px;
+            border-bottom: 5px solid rgb(0, 255, 0);
+        }
+
+        .inp {
+            width: 90%;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: larger;
+            border: none;
+            border: 4px solid rgb(0, 255, 0);
+            margin-bottom: 17px;
+            margin-top: 20px;
+        }
+
+        input::placeholder {
+            color: gray;
+            font-size: larger;
+            font-style: italic;
+        }
+
+        input:hover {
+            border: 4px solid orangered;
+        }
+
+        span {
+            font-size: 26px;
+            margin-left: 20px;
+            font-weight: bold;
+            color: #fff;
+            text-align: start;
+        }
+
+        #cut {
+            color: rgb(0, 255, 0);
+            margin-right: 40px;
+            margin-top: 5px;
+            font-size: xx-large;
+        }
+
+        #cut {
+            cursor: pointer;
+            color: #fff;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(0, 255, 0);
+            color: #fff;
+            font-size: 23px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: orangered;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <center>
+            <i class="fa-solid fa-cart-shopping" id="logo" onclick="location.replace(`./Web.html`)"> Online.JS</i>
+        </center>
+    </nav>
+    <center>
+        <div id="main">
+            <nav id="navs">
+                <i class="fa-solid fa-user" id="logos"> Update</i><i class="fa-solid fa-xmark" id="cut"></i>
+            </nav>
+            <span>Name: </span><input type="text" class="inp" id="nam" placeholder="Enter Updated Name..."
+                required="required">
+            <span>Father Name: </span><input type="text" class="inp" id="fName"
+                placeholder="Enter Updated Father Name..." required="required">
+            <span>Phone #: </span><input type="number" class="inp" id="num" placeholder="Enter Updated Phone Number..."
+                required="required">
+            <button  id="update" onclick="edit('${change.doc.id}')" >Update</button>
+        </div>
+
+    </center>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module">
+        // import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+        // import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js";
+        // import { getFirestore, doc, updateDoc, collection, onSnapshot } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+    apiKey: "AIzaSyB3ZvtJgykA5zlFpKuhnsSq_Ay6HKZlNec",
+    authDomain: "task-e2185.firebaseapp.com",
+    projectId: "task-e2185",
+    storageBucket: "task-e2185.appspot.com",
+    messagingSenderId: "447773639548",
+    appId: "1:447773639548:web:c917761b6d901682781af9",
+    measurementId: "G-0D3K0WGC3G"
+    };
+
+        // // Initialize Firebase
+        // const app = initializeApp(firebaseConfig);
+        // const auth = getAuth(app);
+        // const db = getFirestore(app);
+
+//         function show() {
+//     // var ht=document.getElementById("show")
+//     const q = collection(db, "Users");
+// const unsubscribe = onSnapshot(q, (snapshot) => {
+//   snapshot.docChanges().forEach((change) => {
+   
+//     if (change.type === "removed") {
+// let div=document.getElementById(change.doc.id);
+// div.remove()
+//     }
+//    else if (change.type === "added") {
+//        console.log("added")
+// ht.innerHTML+=`
+// <div id="${change.doc.id}">
+//         <p>${change.doc.data().Name}</p>
+//         <p>${change.doc.data().FatherName}</p>
+//         <p>${change.doc.data().Phone}</p>
+//     </div>`
+//             }
+//         });
+//     });
+// }
+// show()
+
+        // window.edit=async(id) => {
+        //     const name = document.getElementById("nam").value;
+        //     const fName = document.getElementById("fName").value;
+        //     const num = document.getElementById("num").value;
+        //     // const name =prompt("ENter Name"); 
+            // const fName =prompt("ENter Father Name");
+            // const num = prompt("ENter Phone Number");
+        //     const washingtonRef = doc(db, "Users", id);
+      
+        //     await updateDoc(washingtonRef, {
+        //         Name: name,
+        //         FatherName: fName,
+        //         Phone: num,
+        //     }).then(()=>{
+        //         Swal.fire({
+        //         title: `Update User`,
+        //         text: `Update User Successfully `,
+        //         icon: 'success',
+        //         confirmButtonText: 'OK'
+        //     });
+        //         location.reload()
+        //     })
+
+        // }
+
+
+        // update.addEventListener('click', async () => {
+        //     const name = document.getElementById("nam").value;
+        //     const fName = document.getElementById("fName").value;
+        //     const num = document.getElementById("num").value;
+        //     const washingtonRef = doc(db, "Users", "rNQwsgMfBt8qaWMUN1XP");
+
+        //     // Set the "capital" field of the city 'DC'
+        //     await updateDoc(washingtonRef, {
+        //         Name: name,
+        //         FatherName: fName,
+        //         Phone: num,
+        //     });
+        //     Swal.fire({
+        //         title: `Update User`,
+        //         text: `Update User Successfully `,
+        //         icon: 'success',
+        //         confirmButtonText: 'OK'
+        //     });
+        // })
+
+        // onAuthStateChanged(auth, (user) => {
+        //     if (user) {
+        //         const uid = user.uid;
+        //         console.log("UID: ", uid);
+        //     }
+        //     else {
+        //         Swal.fire({
+        //             title: `Account`,
+        //             text: `First Create An Account`,
+        //             icon: 'error',
+        //             confirmButtonText: 'OK'
+        //         });
+        //         function wrong() {
+        //             window.location.href = "./SignUp.html"
+        //         }
+        //         setInterval(wrong, 3000);
+        //     }
+        // });
+
+        // const cut = document.getElementById("cut")
+        // cut.addEventListener('click', () => {
+        //     window.location.href = "./Profile.html";
+        // })
+    </script>
+</body>
+
+</html>

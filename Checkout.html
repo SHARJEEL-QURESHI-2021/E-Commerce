@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Online.JS</title>
+    <link id='favicon' rel="shortcut icon" href="./img/favicon1.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Footer Code */
+
+        #tikka {
+            background-image: url(./img/footer-bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-left: 100px;
+            padding-top: 30px;
+        }
+
+        #white {
+            color: #ffffff;
+            font-size: 15px;
+            margin-top: 7px;
+        }
+
+        .gun {
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        #gun {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #glue {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        #glue:hover {
+            text-decoration: underline;
+        }
+
+        #gun:hover {
+            text-decoration: underline;
+        }
+
+        .uup {
+            margin-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        #para4 {
+            color: rgb(0, 255, 0);
+            font-size: 15px;
+        }
+
+        hr {
+            color: #ffffff;
+        }
+
+        .pop {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding-right: 10px;
+            margin-top: 20px;
+        }
+
+
+        #yai {
+            margin-left: -22px;
+            margin-top: 5px;
+        }
+
+        hr {
+            margin-left: -100px;
+        }
+
+        #buttons {
+            background-color: rgb(7, 190, 7);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid white;
+            margin-left: 55px;
+            position: fixed;
+            bottom: 7px;
+        }
+
+        .jeep {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .jeep:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        .jeeps {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 17px;
+        }
+
+        .jeeps:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        #bold {
+            color: #ffffff;
+            font-weight: bolder;
+        }
+
+        .qqqq {
+            color: #ffffff;
+            font-size: xx-large;
+            border: 1px solid #ffffff;
+            padding: 7px 10px;
+            border-radius: 50%;
+        }
+
+        .qqqq:hover {
+            border-color: #fe8315;
+            color: #fe8315;
+
+        }
+
+        #board {
+            width: 300px;
+            margin-top: 35px;
+        }
+
+        body {
+            margin: 0px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+        }
+
+        #nav {
+            height: 60px;
+            background-color: black;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #logo {
+            color: #fff;
+            font-size: xx-large;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        #logo:hover {
+            cursor: pointer;
+        }
+
+        img {
+            width: 70px;
+            height: 70px;
+            border: 3px solid rgb(0, 255, 0);
+        }
+
+        #main {
+            background-color: white;
+            margin: 30px auto;
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+        }
+
+        #see {
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        #sees {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 350px;
+            justify-content: space-between;
+        }
+
+        #wth {
+            width: 1000px;
+        }
+
+        p {
+            font-weight: bold;
+
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0);
+            margin: 30px auto;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+            border-top: 5px solid rgb(0, 255, 0);
+        }
+
+        .main .a h1 {
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(0, 255, 0);
+            margin-bottom: 30px;
+        }
+
+        .ab h1 {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            padding-bottom: 10px;
+            border-top: 1px solid rgb(0, 255, 0);
+            padding-top: 30px;
+        }
+
+        #see {
+            list-style: none;
+        }
+
+        #see li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        li div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 350px;
+        }
+
+        li .aa {
+            width: 150px;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 40px;
+        }
+
+        li p {
+            text-align: left;
+        }
+
+        li p.q {
+            padding: 10px;
+            background-color: rgb(0, 255, 0);
+            border-radius: 5px;
+            color: white;
+            font-weight: bolder;
+            font-size: 16px;
+            text-align: center;
+            width: 50px;
+        }
+
+        p {
+            color: #fff;
+        }
+
+        li img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid rgb(0, 255, 0);
+        }
+
+        #see li i {
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: rgb(0, 255, 0);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            width: 90px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #see li:hover::before {
+            animation: fade 1s linear;
+        }
+
+        a {
+            font-size: large;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding-top: 8px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #nothing {
+            color: #929090;
+            text-align: center;
+        }
+
+        h4 {
+            color: rgb(0, 255, 0);
+            margin-bottom: 40px;
+            margin-left: 30px;
+            font-weight: bold;
+        }
+
+        .b {
+            border-bottom: 1px solid rgb(0, 255, 0);
+        }
+
+        span {
+            color: rgb(255, 255, 255);
+            font-style: italic;
+        }
+
+        .c {
+            margin-top: 20px;
+            justify-content: space-between;
+            display: flex;
+        }
+
+        button:hover {
+            background-color: orangered;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <center>
+            <i class="fa-solid fa-cart-shopping" id="logo" onclick="location.replace(`./Web.html`)"> Online.JS</i>
+        </center>
+    </nav>
+    <div class="main">
+        <div class="a">
+            <h1>Cart Products</h1>
+        </div>
+        <h1 id="nothing">No Items Here!</h1>
+        <ul id="see">
+
+        </ul>
+        <div class="ab">
+            <h1>Total Amount: <span id="bill">$ 0000</span></h1>
+        </div>
+    </div>
+    <div class="main">
+        <div class="a">
+            <h1><i class="fa-solid fa-user"></i> Detail</h1>
+        </div>
+        <div class="b">
+            <h4><i class="fa-solid fa-user" id="usersLogo"></i> Name: <span id="nam">User Name</span></h4>
+            <h4><i class="fa-solid fa-user" id="usersLogo"></i> Father Name: <span id="fName">User FatherName</span></h4>
+            <h4><i class="fa-solid fa-user" id="usersLogo"></i> Country Name: <span id="cName">User CountryName</span></h4>
+            <h4><i class="fa-solid fa-user" id="usersLogo"></i> Phone #: <span id="num">User PhoneNumber</span></h4>
+            <h4><i class="fa-solid fa-user" id="usersLogo"></i> Email: <span id="email">User Email</span></h4>
+        </div>
+        <div class="c">
+            <a href="./Web.html"> <-- Continue Shopping</a><button id="btn">Buy</button>
+        </div>
+    </div>
+    <script type="module" src="./JS/Checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile | Online.JS</title>
+    <link id='favicon' rel="shortcut icon" href="./img/favicon1.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+        }
+
+        #nav {
+            height: 60px;
+            background-color: black;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+        #logo {
+            color: #fff;
+            font-size: xx-large;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        #logo:hover {
+            cursor: pointer;
+        }
+
+        #logos {
+            color: #fff;
+            font-size: xx-large;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            margin-right: 72px;
+        }
+
+        #logos:hover {
+            cursor: pointer;
+        }
+
+        #user {
+            width: 65px;
+            height: 65px;
+            border: 5px solid rgb(0, 255, 0);
+            margin-left: 10px;
+            margin-top: 60px;
+        }
+
+        #user:hover {
+            cursor: pointer;
+            border: 5px solid orangered;
+        }
+
+        #navs {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(0, 255, 0);
+            padding-top: 10px;
+            padding-left: 20px;
+            text-align: end;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #main {
+            width: 400px;
+            height: 520px;
+            background-color: rgb(0, 0, 0);
+            margin-top: 10px;
+            box-shadow: 1em 1em 1em -0.7em black;
+            border-radius: 10px;
+            border-bottom: 5px solid rgb(0, 255, 0);
+        }
+
+        #cut {
+            color: rgb(0, 255, 0);
+            margin-right: 40px;
+            margin-top: 5px;
+            font-size: xx-large;
+        }
+
+        #cut {
+            cursor: pointer;
+            color: #fff;
+        }
+
+        h3 {
+            font-size: 40px;
+            color: #fff;
+            border-left: 5px solid rgb(0, 255, 0);
+            margin-top: 40px;
+        }
+
+        #showNumber {
+            font-size: 40px;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        #mobile {
+            padding-right: 20px;
+            color: rgb(0, 255, 0);
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            background-color: rgb(0, 255, 0);
+            color: #fff;
+            font-size: 23px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: orangered;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="nav">
+        <center>
+            <i class="fa-solid fa-cart-shopping" id="logo" onclick="location.replace(`./Web.html`)"> Online.JS</i>
+        </center>
+    </nav>
+    <center>
+        <!-- <a href="./Update.html"><button >Update <i class="fa-solid fa-user"></i></button></a>
+        <button id="delet" onclick="del('${change.doc.id}')" >Delete <i class="fa-solid fa-user"></i></button> -->
+        <div id="main">
+            <nav id="navs">
+                <i class="fa-solid fa-user" id="logos"> Card</i><i class="fa-solid fa-xmark" id="cut"></i>
+            </nav>
+            <img src="./img/1.jpg" alt="User" id="user">
+            <h3 id="showName">Muhamad Sharjeel</h3>
+            <h3 id="showFatherName">Muhammad Imran</h3>
+            <h5 id="showNumber"><i class="fa-solid fa-mobile" id="mobile"></i>0000-000-0000</h5>
+        </div>
+    </center>
+    <script type="module" src="./JS/Profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

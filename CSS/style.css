@@ -1,0 +1,495 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#logo {
+    color: #fff;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+#inp {
+    width: 30%;
+    height: 40px;
+    font-size: larger;
+    padding-left: 50px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+input::placeholder {
+    font-style: italic;
+    color: #949292;
+}
+
+#search {
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    color: black;
+    padding-right: 10px;
+    border-right: 2px solid #949292;
+}
+
+#nun {
+    width: 50px;
+    height: 45px;
+    margin-left: 97px;
+    background-color: rgb(0, 0, 0);
+    border: 5px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: #fff;
+}
+
+#nun:hover {
+    cursor: pointer;
+    background-color: orangered;
+    border: 5px solid orangered;
+    color: gold;
+}
+
+#logout {
+    width: 150px;
+    height: 45px;
+    margin-left: 20px;
+    background-color: rgb(0, 255, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: #fff;
+}
+
+#logout:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: gold;
+}
+
+#italic {
+    font-size: larger;
+    margin-right: 10px;
+    color: #fff;
+}
+
+#userName {
+    width: 220px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    border: 3px solid rgb(0, 255, 0);
+    margin-left: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#userName::placeholder {
+    font-size: x-large;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#userName:hover {
+    cursor: pointer;
+    border: 3px solid orangered;
+}
+
+#usersLogo{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 910px;
+    top: 26px;
+    font-size: 20px;
+    padding-right: 10px;
+    border-right: 2px solid #949292;
+}
+
+#usersLogo:hover{
+    color: gold;
+}
+
+#user {
+    width: 45px;
+    height: 45px;
+    border: 3px solid rgb(0, 255, 0);
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#user:hover {
+    cursor: pointer;
+    border: 3px solid orangered;
+}
+
+.ankers {
+    text-decoration: underline;
+    color: rgb(0, 255, 0);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: serif;
+    margin-left: 20px;
+}
+
+.ankers:hover {
+    color: orangered;
+}
+
+#buttons{
+    background-color: rgb(0, 255, 0);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 55px;
+    position: fixed;
+    bottom: 7px;
+    left: 1230px;
+    color: #fff;
+}
+
+/* Card Code */
+
+#show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#card {
+    width: 400px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 1em 1em 1em -0.7em black;
+    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(0, 255, 0);
+    margin-left: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    border-top: 5px solid rgb(0, 255, 0);
+}
+
+#image {
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#title {
+    font-size: 35px;
+    margin: 0px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+#category {
+    color: #ff0000;
+    padding-left: 10px;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+#des {
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#price {
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+#rating {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+#star {
+    color: yellow;
+    font-size: 20px;
+}
+
+#dollar {
+    color: green;
+}
+
+#cart {
+    font-size: xx-large;
+    padding-right: 10px;
+    color: #fff;
+}
+
+#butn {
+    width: 80%;
+    background-color: rgb(0, 255, 0);
+    color: #fff;
+    font-size: xx-large;
+    border: none;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#butn:hover {
+    background-color: orangered;
+    color: gold;
+}
+
+/* Apple Code */
+
+#list {
+    list-style-type: none;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.anker {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+li {
+    padding-left: 40px;
+}
+
+.anker:hover {
+    color: #979797;
+}
+
+/* Kaam Kaj Code */
+
+.oooo {
+    padding-bottom: 30px;
+}
+
+.gggg {
+    color: #fe8315;
+    font-size: 30px;
+}
+
+#null {
+    color: #757575;
+    font-size: 14px;
+}
+
+.llll {
+    margin-bottom: 40px;
+}
+
+#disk {
+    width: 153px;
+    height: 45px;
+}
+
+.jeep {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.jeep:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.jeeps {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+.jeeps:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#bold {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.qqqq {
+    color: #ffffff;
+    font-size: xx-large;
+    border: 1px solid #ffffff;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+
+.qqqq:hover {
+    border-color: #fe8315;
+    color: #fe8315;
+
+}
+
+#board {
+    width: 300px;
+    margin-top: 35px;
+}
+
+#tikka {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#white {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+.gun {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#gun {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#glue {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#glue:hover {
+    text-decoration: underline;
+}
+
+#gun:hover {
+    text-decoration: underline;
+}
+
+.uup {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+#para4 {
+    color: rgb(0, 255, 0);
+    font-size: 15px;
+}
+
+hr {
+    color: #ffffff;
+}
+
+.pop {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+
+#yai {
+    margin-left: -22px;
+    margin-top: 5px;
+}
+
+hr {
+    margin-left: -100px;
+}
+
+.ass {
+    font-size: xx-large;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ass:hover {
+    color: #fe8315;
+}
+
+.setss {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#buttons {
+    background-color: rgb(7, 190, 7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 55px;
+    position: fixed;
+    bottom: 7px;
+}
+
+.beta {
+    width: 280px;
+    height: 170px;
+    background-color: #f5f5f5;
+    margin-left: 20px;
+}
+
+#sizess {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+    color: #333333;
+}
+
+.bbbb {
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#span {
+    font-size: 18px;
+    color: #ffffff;
+}

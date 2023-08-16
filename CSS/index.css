@@ -1,0 +1,263 @@
+body {
+    margin: 0px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDM9-gcl-Nu7YNL-A2AKcDI9-88EtyvUQzfg&usqp=CAU");
+}
+
+nav {
+    height: 60px;
+    background-color: black;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+i {
+    color: #fff;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+input {
+    width: 40%;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 550px;
+    border: none;
+    box-shadow: 0.10rem 1rem 1rem -0.4rem rgba(46, 45, 45, 0.849);
+}
+
+input::placeholder {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+}
+
+input:hover {
+    background-color: orangered;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+#main {
+    width: 75%;
+    height: 450px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 60px;
+    text-align: start;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 170px;
+}
+
+.a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#btn {
+    width: 150%;
+    height: 90%;
+    margin-left: 50px;
+    margin-top: 20px;
+    background-color: rgb(0, 255, 0);
+    color: white;
+    font-size: x-large;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+#set2 {
+    margin-left: 230px;
+}
+
+p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+q {
+    color: red;
+    text-decoration: overline;
+}
+
+#btn1 {
+    width: 550px;
+    height: 330px;
+    background-color: rgb(0, 255, 0);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+#italic {
+    margin-bottom: 10px;
+}
+
+#italics {
+    margin-right: 10px;
+}
+
+/* #italic:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+#italics:hover {
+    color: gold;
+    cursor: pointer;
+} */
+
+#btn:hover {
+    background-color: orangered;
+    color: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    background-color: orangered;
+    color: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+/* Footer Code */
+
+#tikka {
+    background-image: url(../img/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+#white {
+    color: #ffffff;
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+.gun {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+#gun {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#glue {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#glue:hover {
+    text-decoration: underline;
+}
+
+#gun:hover {
+    text-decoration: underline;
+}
+
+.uup {
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+#para4 {
+    color: rgb(0, 255, 0);
+    font-size: 15px;
+}
+
+hr {
+    color: #ffffff;
+}
+
+.pop {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 10px;
+    margin-top: 20px;
+}
+
+
+#yai {
+    margin-left: -22px;
+    margin-top: 5px;
+}
+
+hr {
+    margin-left: -100px;
+}
+
+#buttons {
+    background-color: rgb(7, 190, 7);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 55px;
+    position: fixed;
+    bottom: 7px;
+}
+
+.jeep {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.jeep:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.jeeps {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.jeeps:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+#bold {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.qqqq {
+    color: #ffffff;
+    font-size: xx-large;
+    border: 1px solid #ffffff;
+    padding: 7px 10px;
+    border-radius: 50%;
+}
+
+.qqqq:hover {
+    border-color: #fe8315;
+    color: #fe8315;
+
+}
+
+#board {
+    width: 300px;
+    margin-top: 35px;
+}
